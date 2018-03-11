@@ -13,6 +13,8 @@ import { NgForm } from '@angular/forms';
 //not just at the point of submission, but earlier
 export class AppComponent {
   @ViewChild('f') signupForm: NgForm;
+  //setting up a default property to appear in the input field
+  defaultQuestion = 'pet';
 
   suggestUserName() {
     const suggestedName = 'Superuser';
