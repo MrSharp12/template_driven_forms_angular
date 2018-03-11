@@ -15,6 +15,7 @@ export class AppComponent {
   @ViewChild('f') signupForm: NgForm;
   //setting up a default property to appear in the input field
   defaultQuestion = 'pet';
+  answer = '';
 
   suggestUserName() {
     const suggestedName = 'Superuser';
