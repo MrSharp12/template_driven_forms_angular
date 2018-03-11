@@ -16,6 +16,8 @@ export class AppComponent {
   //setting up a default property to appear in the input field
   defaultQuestion = 'pet';
   answer = '';
+  genders = ['male', 'female'];
+  defaultGender = 'male';
 
   suggestUserName() {
     const suggestedName = 'Superuser';
