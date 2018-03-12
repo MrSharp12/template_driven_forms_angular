@@ -21,6 +21,19 @@ export class AppComponent {
 
   suggestUserName() {
     const suggestedName = 'Superuser';
+    // this.signupForm.setValue({
+    //   userData: {
+    //     username: suggestedName,
+    //     email: '',
+    //   },
+    //   secret: 'pet',
+    //   questionAnswer: '',
+    //   gender: 'male'
+    // });
+    this.signupForm.form.patchValue({
+      userData: {
+        username: suggestedName
+      }});
   }
 //triggered whenever this form is submitted by the user
 //here we want to output whatever the user submitted
